@@ -11,9 +11,11 @@ function CakeContainer(props) {
     )
 }
 
+//Since state is split up in the store it must be referred to
+//by key
 const mapToStateToProps = state => {
     return {
-        numOfCakes: state.numOfCakes
+        numOfCakes: state.cake.numOfCakes
     }
 }
 
